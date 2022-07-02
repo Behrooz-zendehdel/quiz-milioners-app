@@ -3,11 +3,14 @@ import "./App.css";
 import Milioners from "./Components/milioners";
 import { data } from "./db/data";
 import Timer from "./Timer";
+
+
 function App() {
   const [questionNumber, setQuestionNumber] = useState(1);
 
   const [stop, setStop] = useState(false);
   const [pool, setPool] = useState("$ 0");
+  
 
   const moneyPuramid = useMemo(
     () =>
